@@ -1,0 +1,70 @@
+@import'utilities.css';
+
+.hero{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    background: var(--dark);
+}
+
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color:var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+
+@media (max-width:400px){
+    .hero{
+
+    width: 32rem;
+     flex-direction: column;
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 94%, 0 100%);
+    }
+    .hero .right {
+        margin-top: -18rem;
+        margin-left: 4rem;
+        font-size: 1rem;
+    }
+    .hero .right h6{
+        font-size: .6rem;
+        color:var(--primary);
+        margin-bottom: 0.5rem;
+    }
+    .hero .right h1{
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+    .hero .right p{
+     font-size: 0.5rem;
+    }
+    .btn-secondary{
+        height: 3rem;
+        width: 17rem;
+    margin-bottom: 4rem;
+    }
+ }

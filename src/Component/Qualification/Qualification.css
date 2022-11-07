@@ -1,0 +1,102 @@
+
+.container{
+    
+    margin-bottom: 8rem;
+}
+
+.heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+}
+
+.heading + p{
+    color: var(--ternary);
+    font-family:'Lato', sans-serif;
+    margin-bottom:8rem;
+     text-align: center;
+}
+.heading span{
+    color: var(--primary);
+}
+ .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:8rem ;
+    margin-left: 30px;
+    
+}
+.card img{
+    height: 120px;
+    width: 200px;
+}
+
+.qualification{
+    /* background: var(--light); */
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    
+}
+.qualification .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.qualification .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+}
+.qualification .card-wrapper .card h4{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+.qualification .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color:var(--ternary);
+    line-height:1.6;
+}
+.qualification .card-wrapper .card:hover{
+    background: var(--dark); 
+}
+.qualification .card-wrapper .card:hover h4, .qualification .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+@media (max-width:400px){
+    .qualification .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 5rem;
+        margin-left: 4px;
+        
+    }
+    .qualification {
+        background: var(--light);
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+        /* margin-left: 3.5rem; */
+        width:390px;
+    }
+    .container{
+        margin-left: 3rem;
+        margin-bottom: 8rem;
+    }
+
+}
